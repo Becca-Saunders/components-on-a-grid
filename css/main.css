@@ -16,3 +16,30 @@ header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
 }
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "banner banner"
+    "main   main";
+}
+
+header {
+  grid-area: banner;
+  display: contents;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 4em;
+}
+
+main:nth-child(1) {
+  grid-area: main;
+  display: contents;
+}
+
+main:nth-child(2) {
+  grid-area: main;
+  display: contents;
+}

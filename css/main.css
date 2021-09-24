@@ -15,6 +15,15 @@ img {
   width: 100%;
 }
 
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "header header"
+  "box1 box2";
+}
+
 .logo {
   width: 14rem;
 }
@@ -22,14 +31,12 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 4rem 4rem;
 }
 
 header .pano {
   grid-column: 1/-1;
   grid-row: 1/-1;
+  grid-area: header;
 }
 
 header .logo {
@@ -50,13 +57,19 @@ li {
   list-style-type: none;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 0;
-}
-
 figcaption h2 {
   color: #30658d;
+}
+
+main figure {
+  display: grid;
+  display: contents;
+}
+
+main:nth-child(1) {
+  display: grid;
+}
+
+main:nth-child(2) {
+  display: grid;
 }

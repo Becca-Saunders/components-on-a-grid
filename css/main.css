@@ -2,7 +2,8 @@ html {
   box-sizing: border-box;
   background-color: #f2f1ed;
   margin: 1rem;
-  font-family: "patua One", sans-serif;
+  font-family: "Patua One", sans-serif;
+  line-height: 1.5em;
 }
 
 *,
@@ -15,13 +16,12 @@ img {
   width: 100%;
 }
 
-
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "header header"
-  "box1 box2";
+      "header header"
+      "box1 box2";
 }
 
 .logo {

@@ -17,6 +17,7 @@ img {
 }
 
 body {
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -41,10 +42,11 @@ header .pano {
 
 header .logo {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
   z-index: 1;
   width: 6.5em;
   margin-left: 1rem;
+  align-self: end;
 }
 
 nav {
@@ -53,23 +55,40 @@ nav {
   display: inline;
 }
 
-li {
+nav ul {
+  display: flex;
+}
+
+nav li {
   list-style-type: none;
+  padding: 1rem;
+
+}
+
+nav a {
+
 }
 
 figcaption h2 {
   color: #30658d;
 }
 
-main figure {
-  display: grid;
+main {
   display: contents;
 }
 
-main:nth-child(1) {
-  display: grid;
+main {
+  display: contents;
 }
 
-main:nth-child(2) {
-  display: grid;
+figure {
+  margin: 0;
+}
+
+figure:nth-of-type(1) {
+  grid-area: box1;
+}
+
+figure:nth-of-type(2) {
+  grid-area: box2;
 }

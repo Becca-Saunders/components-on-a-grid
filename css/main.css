@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   background-color: #f2f1ed;
   margin: 1rem;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
 }
 
@@ -54,6 +54,7 @@ nav {
   grid-column: 2/-1;
   grid-row: 1;
   display: inline;
+  font-family: "Patua One", sans-serif;
 }
 
 nav ul {

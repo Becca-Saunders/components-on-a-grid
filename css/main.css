@@ -3,7 +3,7 @@ html {
   background-color: #f2f1ed;
   margin: 1rem;
   font-family: "Patua One", sans-serif;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 *,
@@ -19,10 +19,11 @@ img {
 body {
   margin: 0;
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-      "header header"
-      "box1 box2";
+    "header header"
+    "box1 box2";
 }
 
 .logo {
@@ -57,16 +58,18 @@ nav {
 
 nav ul {
   display: flex;
+  margin-top: 0;
+  margin-right: .25rem;
 }
 
 nav li {
   list-style-type: none;
   padding: 1rem;
-
 }
 
 nav a {
-
+  color: #fff;
+  font-size: 2rem;
 }
 
 figcaption h2 {
@@ -77,12 +80,10 @@ main {
   display: contents;
 }
 
-main {
-  display: contents;
-}
-
 figure {
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 figure:nth-of-type(1) {
